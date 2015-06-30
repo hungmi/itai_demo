@@ -1,18 +1,15 @@
-h1
-  span.fa.fa-tree
-  '   義台人造
+=link_to root_path do
+  h1
+    span.fa.fa-tree
+    '   義台人造
 h3
   span.fa.fa-bars
   '   產品目錄
 
 ul
+  -if Category.exists?
+    -@categories.each do |category|
+      li
+        =link_to category.name, category_path(category)
   li
-    a 高級松針聖誕樹
-  li
-    a 人造草皮
-  li
-    a 人造樹
-  li
-    a 人造植物、蔓藤
-  li
-    a 人造花材
+    =link_to 'New Category', new_category_path

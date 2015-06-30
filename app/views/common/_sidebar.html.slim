@@ -12,4 +12,6 @@ ul
       li
         =link_to category.name, category_path(category)
   li
-    =link_to 'New Category', new_category_path
+    =link_to new_category_path do
+      span.fa.fa-plus
+      '   New

@@ -1,0 +1,24 @@
+@import 'variable';
+
+div.sidebar {
+  padding-top: 20px;  
+  h1 {
+    margin-left: $brand_left_margin;
+  }
+  h3 {
+    padding-top: 30px;
+    margin-left: $brand_left_margin + $nav_title_left_margin;
+  }
+  ul {
+    margin-left: $brand_left_margin + $nav_title_left_margin + $nav_list_left_margin;
+    padding-left: 0px;
+    list-style: none;
+    li {
+      padding-top: 5px;
+      font-size: 16px;
+      a:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

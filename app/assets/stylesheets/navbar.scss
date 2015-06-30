@@ -1,0 +1,24 @@
+@import 'variable';
+
+#navbar {
+  background: url(img1.jpg) no-repeat center center fixed;background-size: cover;
+  div.row > div {
+    height: $navbar_height;
+    text-aligh: center;
+  }
+  #nav-brand {
+    padding-top: 0px;
+    color: white;
+  }
+  #nav-li {
+    padding-top: 30px;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 10px;
+      a {
+        color: white;
+      }      
+    }
+  }
+}

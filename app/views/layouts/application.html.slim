@@ -1,11 +1,15 @@
 doctype html
 html
   head
-    title NewTheme
+    title ItaiDemo
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
   body
-    == render 'common/navbar'
-    == yield
+    div.container-fluid.full_screen#grid_gallery
+      div.row.row_12
+        div.col-sm-2.row_12.white.sidebar#bg_img.no_border
+          == render 'common/sidebar'
+        div.col-sm-10.row_12.no_border.no_padding
+          == yield

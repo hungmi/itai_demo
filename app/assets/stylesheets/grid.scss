@@ -1,0 +1,37 @@
+@import 'variable';
+
+.no_padding {
+  padding: 0px !important;
+}
+
+.no_border {
+  border: none !important;
+}
+
+.full_screen {
+  height: $content_height;
+
+  div.row_12 {
+    height: 100%;
+  }
+
+  div.row_9 {
+    height: 75%;
+  }
+
+  div.row_6 {
+    height: 50%;
+  }
+
+  div.row_3 {
+    height: 25%;
+  }
+}
+
+div.container-fluid.full_screen {
+  width: $content_width;
+}
+
+div.row_12 > div {
+  border: 5px solid white;
+}

@@ -1,17 +1,18 @@
-=link_to root_path do
+= link_to root_path do
   h1
     span.fa.fa-tree
+    /= image_tag 'favicon.ico', size:'40x40'
     '   義台人造
 h3
   span.fa.fa-bars
   '   產品目錄
 
 ul
-  -if Category.exists?
-    -@categories.each do |category|
+  - if Category.exists?
+    - @categories.each do |category|
       li
-        =link_to category.name, category_path(category)
+        = link_to category.name, category_path(category)
   li
-    =link_to new_category_path do
+    = link_to new_category_path do
       span.fa.fa-plus
       '   New

@@ -4,10 +4,6 @@
   padding: 0px !important;
 }
 
-.no_border {
-  border: none !important;
-}
-
 .full_screen {
   height: $content_height;
 
@@ -32,6 +28,7 @@ div.container-fluid.full_screen {
   width: $content_width;
 }
 
-div.row_12 > div {
-  border: 5px solid white;
+div.border {
+  border: 5px solid whitesmoke;//LEMONCHIFFON;
+  border-radius: 6px;
 }

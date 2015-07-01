@@ -11,7 +11,7 @@ ul
   - if Category.exists?
     - @categories.each do |category|
       li
-        = link_to category.name, category_products_path(category)
+        = link_to category.name, category_path(category)
   li
     = link_to new_category_path do
       span.fa.fa-plus

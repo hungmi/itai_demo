@@ -10,7 +10,9 @@ html
   body
     div.container-fluid.full_screen#grid_gallery
       div.row.row_12
-        div.col-sm-2.row_12.white.sidebar#bg_img.no_border
+        div.col-md-2.row_12.white.sidebar#bg_img.hidden-sm
           == render 'common/sidebar'
-        div.col-sm-10.row_12.no_border.no_padding
+        div.col-sm-12.row_4.white.sidebar#bg_img.visible-sm
+          == render 'common/sidebar'
+        div.col-md-10.row_12.no_padding#bg_img
           == yield

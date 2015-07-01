@@ -1,3 +1,26 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#product_showcase_container {
+  padding-top: 60px;
+  hr {
+    margin-top: 10px !important;
+  }
+}
+
+#product_showcase_main_grid {
+  div.col-md-3 {    
+    padding: 15px 5px 0px 0px;
+  }
+  div.col-md-3:last-child {
+    padding-right: 0px;    
+  }
+}
+
+#about_products_container {
+  margin-top: 60px;
+  div.col-md-6 {
+    padding: 0px 5px 5px 5px;
+  }
+}

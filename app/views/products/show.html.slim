@@ -1,14 +1,54 @@
-p#notice = notice
-p
-  strong Category:
-  = @product.category.name
-p
-  strong Name:
-  = @product.name
-p
-  strong Description:
-  = @product.description
+div.container#product_showcase_container
 
-= link_to 'Edit', edit_category_product_path(@category, @product)
-'|
-= link_to 'Back', category_products_path
+  p#notice = notice
+
+  p.white_text_border
+    strong
+      span.fa.fa-pagelines
+      = @product.category.name
+
+  div.row.row_12
+    div.col-md-8.col-xs-12.row_12#product_showcase_main_grid
+      div.col-md-12.row_9.text-center.border.no_padding
+        = image_tag '71.jpg', width:'100%'
+      div.col-md-3.row_3.col-xs-3
+        div.border
+          = image_tag '72.jpg', width:'100%'
+      div.col-md-3.row_3.col-xs-3
+        div.border
+          = image_tag '73.jpg', width:'100%'
+      div.col-md-3.row_3.col-xs-3
+        div.border
+          = image_tag '74.jpg', width:'100%'
+      div.col-md-3.row_3.col-xs-3
+        div.border
+          = image_tag '75.jpg', width:'172.5px'
+
+    div.col-md-4.col-xs-12.row_6
+      h2.white_text_border
+        strong = @product.name
+      div.well.green
+        h4
+          span.fa.fa-info
+          '   商品特點
+        hr.black_sm
+        p = @product.description
+      = link_to '進一步了解', root_path, class:'btn btn-primary btn-lg'
+
+    div.col-md-4.col-xs-12.row_6#about_products_container
+      h4.white_text_border 
+        strong 相關商品
+      hr
+      // TODO: 用slice分兩行分別指定padding-right & left
+      div.col-md-6
+        = image_tag '123.jpg', width:'100%'
+      div.col-md-6
+        = image_tag 'c4812.jpg', width:'100%'
+      div.col-md-6
+        = image_tag '1bf5.jpg', width:'100%'
+      div.col-md-6
+        = image_tag 'fcc0.jpg', width:'100%'
+
+  = link_to 'Edit', edit_category_product_path(@category, @product)
+  '|
+  = link_to 'Back', category_products_path

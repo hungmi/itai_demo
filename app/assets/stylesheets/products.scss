@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #product_showcase_container {
-  padding-top: 60px;
+  //padding-top: 60px;
   hr {
     margin-top: 10px !important;
   }
@@ -11,16 +11,16 @@
 
 #product_showcase_main_grid {
   div.col-md-3 {    
-    padding: 15px 5px 0px 0px;
+    //padding: 15px 5px 0px 0px;
   }
   div.col-md-3:last-child {
-    padding-right: 0px;    
+    //padding-right: 0px;    
   }
 }
 
 #about_products_container {
-  margin-top: 60px;
+  padding-top: 1%;
   div.col-md-6 {
-    padding: 0px 5px 5px 5px;
+    //padding: 0px 5px 5px 5px;
   }
 }

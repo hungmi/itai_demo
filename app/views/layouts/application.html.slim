@@ -6,13 +6,22 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
 
   body
-    div.container-fluid.full_screen#grid_gallery
-      div.row.row_12
-        div.col-md-2.row_12.white.sidebar#bg_img.hidden-sm
-          == render 'common/sidebar'
-        div.col-sm-12.row_4.white.sidebar#bg_img.visible-sm
-          == render 'common/sidebar'
-        div.col-md-10.row_12.no_padding#bg_img
-          == yield
+    div.container-fluid.no_padding.full_col
+      div.col-md-12.row_1.bg_img.white#top_bar
+        = link_to root_path do
+          h1#brand
+            span.fa.fa-tree
+            /= image_tag 'favicon.ico', size:'40x40'
+            '   義台人造
+
+        p#notice = notice
+
+      div.col-md-2.row_11.white.sidebar.container-fluid.bg_img.hidden-sm.no_padding
+        == render 'common/sidebar'
+      div.col-sm-12.row_4.white.sidebar.container-fluid.bg_img.visible-sm.no_padding
+        == render 'common/sidebar'
+      div.col-md-10.row_11.bg_img.no_padding#content_div
+        == yield

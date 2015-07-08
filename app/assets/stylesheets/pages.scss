@@ -1,6 +1,30 @@
 @import 'variable';
 
-#grid_gallery {
+#home_div {
+
+  #home_grid_div {
+    div {
+      border: none;
+    }
+
+    div.padding_right {
+      padding-right: 1% !important;
+    }
+
+    div.padding_left {
+      padding-left: 1% !important;
+    }
+
+    div.padding_top {
+      padding-top: 1% !important;
+    }
+
+    div.padding_bottom {
+      padding-bottom: 1% !important;
+    }
+  }
+
+  padding: 0 0 6% 0;
 
   #up,
   #down {
@@ -9,30 +33,51 @@
 
   #up {background: url(img1.jpg) no-repeat center center fixed;background-size: cover;}
   #down {background: url(img1.jpg) no-repeat center center fixed;background-size: cover;}
-  #bg_img {background: url(img1.jpg) no-repeat center center fixed;background-size: cover;}
   #product_img1 {
     background: url(product2.jpg) no-repeat;// fixed;
     background-size: cover;
     background-position: left 80% center;
+    border: 5px solid white;
   }
   #product_img2 {
     background: url(fcc0.jpg) no-repeat;// fixed;
     background-size: cover;
     background-position: left 60% center;
+    border: 5px solid white;
   }
   #product_img3 {
     background: url(1bf5.jpg) no-repeat;// fixed;
     background-size: cover;
+    border: 5px solid white;
   }
   #product_img4 {
     background: url(c4812.jpg) no-repeat;// fixed;
     background-size: cover;
     background-position: center top 15%;
+    border: 5px solid white;
   }
   #product_img5 {
     background: url(8b46.jpg) no-repeat;// fixed;
     background-size: cover;
     background-position: center top 10%;
+    border: 5px solid white;
   }
 
 }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  //$navbar_height: 33px;
+  #home_div {
+    //padding: 20px 10% 6% 10%;
+  }
+}
+
+
+@media (min-width: 1680px) { }

@@ -7,6 +7,7 @@
     background-color: rgba(255,255,255,0);
     color: white;
     text-decoration: none;
+    text-shadow: 0px 0px 14px rgba(255, 255, 255, 1);
   }
 }
 
@@ -20,6 +21,28 @@ hr.black_sm {
   background-color: black;
 }
 
-.well.green {
-  border: 2px solid green;
+.black_shadow {
+  -webkit-box-shadow: 3px 4px 2px rgba(50, 50, 50, 0.59);
+  -moz-box-shadow:    3px 4px 2px rgba(50, 50, 50, 0.59);
+  box-shadow:         3px 4px 2px rgba(50, 50, 50, 0.59) !important;
 }
+
+.well.green {
+  border: 3px solid green;
+}
+
+
+// these two together
+
+.btn {
+  text-shadow: none;
+}
+
+.btn.btn-primary:hover {
+  background-color: #337ab7;
+}
+
+.btn:hover.white_text_border {
+  text-shadow: 0px 0px 14px rgba(255, 255, 255, 1);
+}
+//

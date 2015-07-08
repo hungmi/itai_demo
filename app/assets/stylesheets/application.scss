@@ -15,5 +15,19 @@
  */
 
 @import "variable";
+@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+// neccesarry for full-screen
+html,
+body,
+body > div.container-fluid {
+  height: 100%;
+  width: 100%;
+}
+
+div.bg_img {
+  background: url(img1.jpg) no-repeat center center fixed;
+  background-size: cover;
+}

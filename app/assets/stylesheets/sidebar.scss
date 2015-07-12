@@ -1,7 +1,19 @@
 @import 'variable';
 
+#top_bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1030;
+}
+
 div.sidebar {
   padding-top: 20px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 1030;
 
   #category_list {
     padding-top: 3%;
@@ -11,6 +23,7 @@ div.sidebar {
   }
 
   #category_text {
+    color: LIGHTYELLOW;
     //margin-top: 20px;
   }
 

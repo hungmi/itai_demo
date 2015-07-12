@@ -1,9 +1,10 @@
-div.col-md-3.row_3 style='background-color:white; box-shadow: 3px 3px 8px 2px rgba(63,63,63,1); margin-right:2%; width:32%;'
-      = link_to category_product_path(@category, product) do
-        h3.white_text_border style='text-decoration:none; color:#222;'
-          strong = product.name
-        = image_tag '71.jpg', width:'100%'
-        p style='color:#222;' = product.description
-        = link_to 'Show', category_product_path(@category, product)
-        = link_to 'Edit', edit_category_product_path(@category, product)
-        = link_to 'Destroy', category_product_path(@category, product), data: {:confirm => 'Are you sure?'}, :method => :delete
+div.col-md-4.margin_bottom
+  div.col-md-12#product_box
+    = link_to category_product_path(@category, product) do
+      h3.white_text_border style='text-decoration:none; color:#222;'
+        strong = product.name
+      = image_tag '71.jpg', width:'100%'
+      p style='color:#222;' = product.description
+      - link_to 'Show', category_product_path(@category, product)
+      - link_to 'Edit', edit_category_product_path(@category, product)
+      - link_to 'Destroy', category_product_path(@category, product), data: {:confirm => 'Are you sure?'}, :method => :delete

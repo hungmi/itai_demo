@@ -3,12 +3,26 @@
   a {
     color: LIGHTYELLOW;
   }
-  a:hover {
+  a:hover, a:visited, a:active {
     background-color: rgba(255,255,255,0);
-    color: white;
+    color: LIGHTYELLOW;
     text-decoration: none;
     text-shadow: 0px 0px 14px rgba(255, 255, 255, 1);
   }
+}
+
+.black {
+  color: darkgreen;
+  a {
+    color: #111;
+  }
+  a:hover, a:visited, a:active {
+    background-color: rgba(0,0,0,0);
+    color: #111;
+    text-decoration: none;
+    text-shadow: 0px 0px 14px rgba(255, 255, 255, 1);
+  }
+  border-color: darkgreen !important;
 }
 
 .white_text_border {

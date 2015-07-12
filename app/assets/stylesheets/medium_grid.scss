@@ -1,0 +1,80 @@
+$brand-bar-height: 100px;
+$content-height: 750px - $brand-bar-height;
+
+.no_padding { padding: 0px !important; }
+
+.no_padding_right { padding-right: 0px !important; }
+
+.no_padding_left { padding-left: 0px !important; }
+
+.no_padding_top { padding-top: 0px !important; }
+
+.no_padding_bottom { padding-bottom: 0px !important; }
+
+
+
+.padding_right { padding-right: 3% !important; }
+
+.padding_left { padding-left: 3% !important; }
+
+.padding_top { padding-top: 3% !important; }
+
+.padding_bottom { padding-bottom: 3% !important; }
+
+
+
+.margin_right { margin-right: 3% !important; }
+
+.margin_left { margin-left: 3% !important; }
+
+.margin_top { margintop: 3% !important; }
+
+.margin_bottom { margin-bottom: 3% !important; }
+
+
+
+.border { border: 5px solid whitesmoke; }
+
+.border_radius { border-radius: 6px; }
+
+.border_right { border-right: 5px solid whitesmoke; }
+
+.border_left { border-left: 5px solid whitesmoke; }
+
+.border_top { border-top: 5px solid whitesmoke; }
+
+.border_bottom { border-bottom: 5px solid whitesmoke; }
+
+
+
+.row_12_height { height: 1 * $content-height !important; }
+
+.row_11_height { height: 0.916666 * $content-height !important; }
+
+.row_10_height { height: 0.833333 * $content-height !important; }
+
+.row_9_height { height: 0.75 * $content-height !important; }
+
+.row_6_height { height: 0.50 * $content-height !important; }
+
+.row_4_height { height: 0.333333 * $content-height !important; }
+
+.row_3_height { height: 0.25 * $content-height !important; }
+
+.row_1_height { height: 0.083333 * $content-height !important; }
+
+.row_12 { height: 100% !important; }
+
+.row_11 { height: 91.6666% !important; }
+
+.row_10 { height: 83.3333% !important; }
+
+.row_9 { height: 75% !important; }
+
+.row_6 { height: 50% !important; }
+
+.row_4 { height: 33.3333% !important; }
+
+.row_3 { height: 25% !important; }
+
+.row_1 { height: 8.3333% !important; }

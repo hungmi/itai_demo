@@ -1,13 +1,9 @@
-
-
-  /!p.white_text_border
-    strong
-      span.fa.fa-pagelines
-      = @product.category.name
-
-  div#product_showcase_container
+  div#product_showcase_container.row_12_height
     div.col-md-7.col-xs-12.row_9#product_showcase_main_grid
       div.col-md-12.row_7 style="padding-bottom: 4% !important;"
+        div.border.no_padding
+          = image_tag '71.jpg', width:'100%'
+      div.col-md-3.row_2.col-xs-3
         div.border.no_padding
           = image_tag '71.jpg', width:'100%'
       div.col-md-3.row_2.col-xs-3
@@ -19,11 +15,12 @@
       div.col-md-3.row_2.col-xs-3
         div.border.no_padding
           = image_tag '74.jpg', width:'100%'
-      div.col-md-3.row_2.col-xs-3
-        div.border.no_padding
-          = image_tag '75.jpg', width:'100%'
 
     div.col-md-3.col-xs-12.row_7
+      strong.white_text_border.black
+        span.fa.fa-pagelines
+        = link_to @product.category.name, category_path(@product.category)
+        span.fa.fa-angle-double-right
       h2.white_text_border
         strong = @product.name
       div.well.green.col-xs-12.black_shadow

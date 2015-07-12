@@ -9,8 +9,9 @@ html
   meta name="viewport" content="width=device-width, initial-scale=1.0"
 
   body
-    div.container-fluid.no_padding.full_col
-      div.col-md-12.row_1.bg_img.white#top_bar
+    div.container-fluid.no_padding.bg_img
+      / 如果需要置中的話，可使用col-md-offset
+      div.col-md-offset-1.col-md-11.row_1.white#top_bar
         = link_to root_path do
           h1#brand
             span.fa.fa-tree
@@ -19,9 +20,9 @@ html
 
         p#notice = notice
 
-      div.col-md-2.row_11.white.sidebar.container-fluid.bg_img.hidden-sm.no_padding
+      div.col-md-offset-1.col-md-2.white.sidebar.container-fluid.hidden-sm.no_padding
         == render 'common/sidebar'
-      div.col-sm-12.row_4.white.sidebar.container-fluid.bg_img.visible-sm.no_padding
+      div.col-sm-12.white.sidebar.container-fluid.visible-sm.no_padding
         == render 'common/sidebar'
-      div.col-md-10.row_11.bg_img.no_padding#content_div
+      div.col-md-offset-3.col-md-7#content_div.no_padding style="margin-top: 100px; background:rgba(173,255,47,.2);"
         == yield

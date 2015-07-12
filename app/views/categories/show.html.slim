@@ -6,41 +6,14 @@ div.container-fluid#product_showcase_container
     strong
       span.fa.fa-pagelines = @category.name
 
-  hr style='background-color:limegreen; height:3px; border:none;
+  hr style='background-color: limegreen; height: 3px; border: none;
 box-shadow: 3px -3px 8px 2px rgba(255,255,255,1);'
 
 
-  div.row.row_12
+  div.row
   - @category.products.each do |product|
-    div.col-md-3.row_3 style='background-color:white; box-shadow: 3px 3px 8px 2px rgba(63,63,63,1); margin-right:2%; width:32%;'
-      = link_to category_product_path(@category, product) do
-        h3.white_text_border style='text-decoration:none; color:#222;'
-          strong = product.name
-        = image_tag '71.jpg', width:'100%'
-        p style='color:#222;' = product.description
-        = link_to 'Show', category_product_path(@category, product)
-        = link_to 'Edit', edit_category_product_path(@category, product)
-        = link_to 'Destroy', category_product_path(@category, product), data: {:confirm => 'Are you sure?'}, :method => :delete
-    div.col-md-3.row_3 style='background-color:white; box-shadow: 3px 3px 8px 2px rgba(63,63,63,1); margin-right:2%; width:32%;'
-      = link_to category_product_path(@category, product) do
-        h3.white_text_border style='text-decoration:none; color:#222;'
-          strong = product.name
-        = image_tag '71.jpg', width:'100%'
-        p style='color:#222;' = product.description
-        = link_to 'Show', category_product_path(@category, product)
-        = link_to 'Edit', edit_category_product_path(@category, product)
-        = link_to 'Destroy', category_product_path(@category, product), data: {:confirm => 'Are you sure?'}, :method => :delete
-    div.col-md-3.row_3 style='background-color:white; box-shadow: 3px 3px 8px 2px rgba(63,63,63,1); width:32%;'
-      = link_to category_product_path(@category, product) do
-        h3.white_text_border style='text-decoration:none; color:#222;'
-          strong = product.name
-        = image_tag '71.jpg', width:'100%'
-        p style='color:#222;' = product.description
-        = link_to 'Show', category_product_path(@category, product)
-        = link_to 'Edit', edit_category_product_path(@category, product)
-        = link_to 'Destroy', category_product_path(@category, product), data: {:confirm => 'Are you sure?'}, :method => :delete
-
-  br
+    - 9.times do
+      = render 'categories/partial/sample_product', product: product
 
   = link_to 'New Product', new_category_product_path(@category)
 

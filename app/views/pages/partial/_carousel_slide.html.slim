@@ -1,9 +1,19 @@
 = content_tag :div, class:'row_12', data: { ride: "carousel" }, id: id do
   div.carousel-inner.row_12 role="listbox"
     div.item.row_12.active
-      = image_tag image1, class:'row_12'
+      // 每張照片會包含一個連結作為圖片連結 
+      div.row_12#item1 onclick="location.href='/categories/1/products/1';" style="background-image:url(#{image1});"
+      /= image_tag image1, class:'row_12'
       div.carousel-caption
 
     div.item.row_12
-      = image_tag image2, class:'row_12'
+      div.row_12#item2 onclick="location.href='/categories/1/products/1';" style="background-image:url(#{image2});"
+      /= image_tag image2, class:'row_12'
       div.carousel-caption
+
+css:
+  #item1, #item2 {
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }

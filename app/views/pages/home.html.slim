@@ -1,37 +1,43 @@
-  div.col-md-12.row_10_height.no_padding.padding_bottom
-    = render 'pages/partial/photo_grid_2'
+  div.col-md-11.no_padding style="background:rgba(255,255,153,1);"
+    div.col-md-12.row_10_height.no_padding
+      = render 'pages/partial/photo_grid_2'
 
-  div.col-md-12.row_12_height.margin_bottom.black
+    div.col-md-12.black.margin_bottom
 
-    div.col-md-12.row_4.padding_bottom
-      div.col-md-12.row_2.text-center.no_padding
-        h2 style='border-bottom: 3px solid black; padding-bottom: 10px;'
-          a 大型聖誕樹
-      div.col-md-4.row_9.no_padding_left
-        div.col-md-12.row_12#product_img2
-      div.col-md-4.row_9
-        div.col-md-12.row_12#product_img3
-      div.col-md-4.row_9.no_padding_right
-        div.col-md-12.row_12#product_img4
+      div.col-md-12.row_4_height.padding_left2x.padding_right2x.padding_top2x
+        div.col-md-12.row_2.text-center.no_padding style='border-bottom: 2px solid black; padding-bottom: 10px;'
+          = link_to category_path(1) do
+            h3.pull-left.white_text_border
+              strong
+                span.fa.fa-pagelines
+                |   大型聖誕樹
+        div.col-md-4.row_9.no_padding_left.padding_top.padding_right2x
+          div.col-md-12.row_12#product_img2
+        div.col-md-4.row_9.padding_top
+          div.col-md-12.row_12#product_img3
+        div.col-md-4.row_9.no_padding_right.padding_top.padding_left2x
+          div.col-md-12.row_12#product_img4
 
-    div.col-md-12.row_4.padding_bottom
-      div.col-md-12.row_2.text-center.no_padding
-        h2 style='border-bottom: 3px solid black; padding-bottom: 10px;'
-          a 人造草皮
-      div.col-md-4.row_9.no_padding_left
-        div.col-md-12.row_12#product_img2
-      div.col-md-4.row_9
-        div.col-md-12.row_12#product_img4
-      div.col-md-4.row_9.no_padding_right
-        div.col-md-12.row_12#product_img3
+      div.col-md-12.row_4_height.padding_left2x.padding_right2x.padding_top2x
+        div.col-md-12.row_2.text-center.no_padding style='border-bottom: 2px solid black; padding-bottom: 10px;'
+          h3.pull-left
+            strong
+              = link_to '人造草皮', category_path(1)
+        div.col-md-4.row_9.no_padding_left.padding_top.padding_right2x
+          div.col-md-12.row_12#product_img2
+        div.col-md-4.row_9.padding_top
+          div.col-md-12.row_12#product_img4
+        div.col-md-4.row_9.no_padding_right.padding_top.padding_left2x
+          div.col-md-12.row_12#product_img3
 
-    div.col-md-12.row_4.padding_bottom
-      div.col-md-12.row_2.text-center.no_padding
-        h2 style='border-bottom: 3px solid black; padding-bottom: 10px;'
-          a 人造花材
-      div.col-md-4.row_9.no_padding_left
-        div.col-md-12.row_12#product_img3
-      div.col-md-4.row_9
-        div.col-md-12.row_12#product_img2
-      div.col-md-4.row_9.no_padding_right
-        div.col-md-12.row_12#product_img4
+      div.col-md-12.row_4_height.padding_left2x.padding_right2x.padding_top2x
+        div.col-md-12.row_2.text-center.no_padding style='border-bottom: 2px solid black; padding-bottom: 10px;'
+          h3.pull-left.white_text_border
+            strong
+              = link_to '人造花材', category_path(1)
+        div.col-md-4.row_9.no_padding_left.padding_top.padding_right2x
+          div.col-md-12.row_12#product_img3
+        div.col-md-4.row_9.padding_top
+          div.col-md-12.row_12#product_img2
+        div.col-md-4.row_9.no_padding_right.padding_top.padding_left2x
+          div.col-md-12.row_12#product_img4

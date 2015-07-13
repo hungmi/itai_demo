@@ -18,7 +18,7 @@
 
 var randomEffect = function(id, effect1, effect2) {
   a = Math.random();
-  console.log(id + ':' + a);
+  //console.log(id + ':' + a);
   if( a > 0.5) {
     $('#' + id).removeClass(effect2);
     $('#' + id).addClass(effect1);
@@ -29,7 +29,8 @@ var randomEffect = function(id, effect1, effect2) {
 }
 
 $(function(){
-  for (var i = 1; i < 6; i++) {
+  console.log('gogogo');
+  for (var i = 1; i < 8; i++) {
     $('#carousel_' + i).on('slide.bs.carousel', function () {
       randomEffect($(this).attr("id"), 'slide', 'slide carousel-fade');
     })
@@ -39,7 +40,7 @@ $(function(){
     interval: 6000    
   });
   $('#carousel_2').carousel({
-    interval: 5000
+    interval: 3000
   });
   $('#carousel_3').carousel({
     interval: 14000
@@ -50,6 +51,14 @@ $(function(){
   $('#carousel_5').carousel({
     interval: 9000
   });
+  $('#carousel_6').carousel({
+    interval: 12000
+  });
+  $('#carousel_7').carousel({
+    interval: 8000
+  });
 
   //$('#product_showcase_main_grid').img
 });
+
+

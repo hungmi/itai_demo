@@ -1,33 +1,33 @@
 @import 'variable';
 
-  #up,
-  #down {
-    background-color: black;
-  }
+#up,
+#down {
+  background-color: black;
+}
 
-  #up {background: url(img1_mini.jpg) no-repeat center center fixed;background-size: cover;}
-  #down {background: url(img1_mini.jpg) no-repeat center center fixed;background-size: cover;}
-  #product_img1 {
-    background: url(product2_mini.jpg) no-repeat;// fixed;
-    background-size: cover;
-    background-position: left 80% center;
-  }
-  #product_img2 {
-    background: url(fcc0_mini.jpg) no-repeat;// fixed;
-    background-size: cover;
-    background-position: left 60% center;
-  }
-  #product_img3 {
-    background: url(1bf5_mini.jpg) no-repeat;// fixed;
-    background-size: cover;
-  }
-  #product_img4 {
-    background: url(c4812_mini.jpg) no-repeat;// fixed;
-    background-size: cover;
-    background-position: center top 15%;
-  }
-  #product_img5 {
-    background: url(8b46_mini.jpg) no-repeat;// fixed;
-    background-size: cover;
-    background-position: center top 10%;
-  }
+#up {background: url(img1_mini.jpg) no-repeat center center fixed;background-size: cover;}
+#down {background: url(img1_mini.jpg) no-repeat center center fixed;background-size: cover;}
+#product_img1 {
+  background: url(new/tree1.jpg) no-repeat;// fixed;
+  background-size: cover;
+  background-position: center;
+}
+#product_img2 {
+  background: url(new/121157302_211n.jpg) no-repeat;// fixed;
+  background-size: cover;
+  background-position: center;
+}
+#product_img3 {
+  background: url(new/緬梔花.png) no-repeat;// fixed;
+  background-size: cover;
+}
+#product_img4 {
+  background: url(c4812_mini.jpg) no-repeat;// fixed;
+  background-size: cover;
+  background-position: center;
+}
+#product_img5 {
+  background: url(new/gress1.jpg) no-repeat;// fixed;
+  background-size: cover;
+  background-position: center;
+}

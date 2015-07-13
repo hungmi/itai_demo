@@ -3,7 +3,7 @@
   a {
     color: LIGHTYELLOW;
   }
-  a:hover, a:visited, a:active {
+  a:hover, a:visited, a:active, a:focus {
     background-color: rgba(255,255,255,0);
     color: LIGHTYELLOW;
     text-decoration: none;
@@ -16,7 +16,7 @@
   a {
     color: #111;
   }
-  a:hover, a:visited, a:active {
+  a:hover, a:visited, a:active, a:focus {
     background-color: rgba(0,0,0,0);
     color: #111;
     text-decoration: none;
@@ -27,6 +27,9 @@
 
 .white_text_border {
   text-shadow: 0px 0px 14px rgba(255, 255, 255, 1);
+  a:hover {
+    text-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
+  }
 }
 
 hr.black_sm {

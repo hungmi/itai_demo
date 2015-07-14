@@ -4,7 +4,15 @@
       h2 = "#{pluralize(@category.errors.count, "error")} prohibited this category from being saved:"
       ul
         - @category.errors.full_messages.each do |message|
-          li = message
+          li = message  
 
   = f.input :name
-  .actions = f.submit
+
+  h3 subcategories
+  #subcategories
+    = f.simple_fields_for :subcategories do |subcategory|
+      = render 'categories/partial/subcategory_fields', :f => subcategory
+    .links
+      = link_to_add_association 'add subcategory', f, :subcategories, :partial => 'categories/partial/subcategory_fields'
+
+  = f.submit

@@ -18,6 +18,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1/edit
   def edit
+    #@subcategory = Subcategory.new
   end
 
   # POST /categories
@@ -68,6 +69,6 @@ class CategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def category_params
-      params[:category].permit(:name)
+      params[:category].permit(:name, subcategories_attributes:[:id, :name, :_destroy])
     end
 end

@@ -1,0 +1,20 @@
+div.col-md-3.row_12#product_showcase_description
+  div.col-md-12.col-xs-12.row_12
+    strong.white_text_border.black
+      span.fa.fa-pagelines
+      = link_to @product.category.name, category_path(@product.category)
+      span.fa.fa-angle-double-right
+    h2.white_text_border
+      strong = @product.name
+    div.well.green.col-xs-12.black_shadow
+      h4
+        span.fa.fa-info
+        '   商品特點
+      hr.black_sm
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.apien viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      /= @product.description
+    = link_to '進一步了解', root_path, class:'btn btn-primary btn-lg black_shadow white_text_border'
+  /
+    = link_to 'Edit', edit_category_product_path(@category, @product)
+    '|
+    = link_to 'Back', category_products_path

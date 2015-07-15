@@ -7,10 +7,16 @@ div#category_list
     - if Category.exists?
       - @categories.each do |category|
         li
-          = link_to category.name, category_path(category)
-          |  
-          = content_tag(:span, '', class:"fa fa-caret-down") if category.subcategories.exists?
-          - if category.subcategories.exists?
+          - if category.name.include? "2014"
+            = link_to category.name, category_lock_path(category)
+            |  
+            = content_tag(:span, '', class:"fa fa-lock")
+          - else
+            = link_to category.name, category_path(category)
+
+          /|  
+          /= content_tag(:span, '', class:"fa fa-caret-down") if category.subcategories.exists?
+          /- if category.subcategories.exists?
 
             ul.margin_left
               - category.subcategories.each do |subcategory|

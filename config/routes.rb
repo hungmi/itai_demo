@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :categories do
     resources :products
     resources :subcategories
+    get 'lock' => 'pages#lock'
   end
 
   resources :subcategories do

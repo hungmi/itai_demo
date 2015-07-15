@@ -12,7 +12,7 @@ box-shadow: 3px -3px 8px 2px rgba(255,255,255,1);'
 
   div.row
   - @category.products.each do |product|
-    - 2.times do
+    - 6.times do
       = render 'categories/partial/sample_product', product: product
 
   = link_to 'New Product', new_category_product_path(@category)

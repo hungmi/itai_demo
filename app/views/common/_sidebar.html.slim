@@ -1,18 +1,27 @@
 div#category_list
   h3#category_text
     span.fa.fa-bars
-    '   產品目錄
+    '  所有產品
 
   ul
     - if Category.exists?
       - @categories.each do |category|
         li
           = link_to category.name, category_path(category)
+          |  
+          = content_tag(:span, '', class:"fa fa-caret-down") if category.subcategories.exists?
           - if category.subcategories.exists?
-            ul
+
+            ul.margin_left
               - category.subcategories.each do |subcategory|
                 li
-                  = subcategory.name
+                  - if subcategory.name.include? "2014"
+                    = link_to subcategory.name, subcategory_lock_path(subcategory)
+                    |  
+                    = content_tag(:span, '', class:"fa fa-lock")
+                  - else
+                    a href='/categories/1'
+                      = subcategory.name
                   /= link_to subcategory.name, category_subcategory_path(category, subcategory)
     li
       = link_to new_category_path do

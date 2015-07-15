@@ -10,14 +10,23 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
-@import "variable";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+@import "carousel_fade";
+
+@import "responsive";
+@import "variable";
+@import "colors";
+
+@import "pages";
+@import "products";
+@import "categories";
+@import "sidebar";
 
 // neccesarry for full-screen
 html, body, body > div.container-fluid {
